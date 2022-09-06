@@ -33,6 +33,7 @@ export default function Sidebar() {
                                 <TimelineIcon className="sidebarIcon" />Analytics
                             </li>
                         </Link>
+
                         <Link to="/sales" className="link">
                             <li className="sidebarListItem">
                                 <TrendingUpIcon className="sidebarIcon" />Sales
