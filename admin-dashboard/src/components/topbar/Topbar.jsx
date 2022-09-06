@@ -8,7 +8,7 @@ export default function Topbar() {
             <div className="topbarWrapper">
                 <div className="topLeft">
                     <span className="logo">
-                        AdminDash
+                        Expo San
                     </span>
                 </div>
                 <div className="topRight">

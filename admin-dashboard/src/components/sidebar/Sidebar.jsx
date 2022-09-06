@@ -12,6 +12,7 @@ import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
+import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
     return (
@@ -22,70 +23,94 @@ export default function Sidebar() {
                         Dashboard
                     </h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
-                            <LineStyleIcon className="sidebarIcon" />Home
-                        </li>
-                        <li className="sidebarListItem">
-                            <TimelineIcon className="sidebarIcon" />Analytics
-                        </li>
-                        <li className="sidebarListItem">
-                            <TrendingUpIcon className="sidebarIcon" />Sales
-                        </li>
+                        <Link to="/" className="link">
+                            <li className="sidebarListItem active">
+                                <LineStyleIcon className="sidebarIcon" />Home
+                            </li>
+                        </Link>
+                        <Link to="/analytics" className="link">
+                            <li className="sidebarListItem">
+                                <TimelineIcon className="sidebarIcon" />Analytics
+                            </li>
+                        </Link>
+                        <Link to="/sales" className="link">
+                            <li className="sidebarListItem">
+                                <TrendingUpIcon className="sidebarIcon" />Sales
+                            </li>
+                        </Link>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <PermIdentityIcon className="sidebarIcon" />
-                            Users
-                        </li>
-                        <li className="sidebarListItem">
-                            <StorefrontIcon className="sidebarIcon" />
-                            Products
-                        </li>
-                        <li className="sidebarListItem">
-                            <AttachMoneyIcon className="sidebarIcon" />
-                            Transactions
-                        </li>
-                        <li className="sidebarListItem">
-                            <BarChartIcon className="sidebarIcon" />
-                            Reports
-                        </li>
+                        <Link to="/users" className="link">
+                            <li className="sidebarListItem">
+                                <PermIdentityIcon className="sidebarIcon" />
+                                Users
+                            </li>
+                        </Link>
+                        <Link to="/products" className="link">
+                            <li className="sidebarListItem">
+                                <StorefrontIcon className="sidebarIcon" />
+                                Products
+                            </li>
+                        </Link>
+                        <Link to="/transactions" className="link">
+                            <li className="sidebarListItem">
+                                <AttachMoneyIcon className="sidebarIcon" />
+                                Transactions
+                            </li>
+                        </Link>
+                        <Link to="/reports" className="link">
+                            <li className="sidebarListItem">
+                                <BarChartIcon className="sidebarIcon" />
+                                Reports
+                            </li>
+                        </Link>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Notifications</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <MailOutlineIcon className="sidebarIcon" />
-                            Mail
-                        </li>
-                        <li className="sidebarListItem">
-                            <DynamicFeedIcon className="sidebarIcon" />
-                            Feedback
-                        </li>
-                        <li className="sidebarListItem">
-                            <ChatBubbleOutlineIcon className="sidebarIcon" />
-                            Messages
-                        </li>
+                        <Link to="/mails" className="link">
+                            <li className="sidebarListItem">
+                                <MailOutlineIcon className="sidebarIcon" />
+                                Mail
+                            </li>
+                        </Link>
+                        <Link to="/feedback" className="link">
+                            <li className="sidebarListItem">
+                                <DynamicFeedIcon className="sidebarIcon" />
+                                Feedback
+                            </li>
+                        </Link>
+                        <Link to="/messages" className="link">
+                            <li className="sidebarListItem">
+                                <ChatBubbleOutlineIcon className="sidebarIcon" />
+                                Messages
+                            </li>
+                        </Link>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Staff</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <WorkOutlineIcon className="sidebarIcon" />
-                            Manage
-                        </li>
-                        <li className="sidebarListItem">
-                            <TimelineIcon className="sidebarIcon" />
-                            Analytics
-                        </li>
-                        <li className="sidebarListItem">
+                        <Link to="/manage" className="link">
+                            <li className="sidebarListItem">
+                                <WorkOutlineIcon className="sidebarIcon" />
+                                Manage
+                            </li>
+                        </Link>
+                        <Link to="/systemLog" className="link">
+                            <li className="sidebarListItem">
+                                <TimelineIcon className="sidebarIcon" />
+                                System Log
+                            </li>
+                        </Link>
+                        {/* <li className="sidebarListItem">
                             <ReportGmailerrorredIcon className="sidebarIcon" />
-                            Reports
-                        </li>
+                            Settings
+                        </li> */}
                     </ul>
                 </div>
             </div>
