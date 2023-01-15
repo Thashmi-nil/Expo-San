@@ -8,6 +8,11 @@ import './home.css'
 export default function Home() {
     return (
         <div className='home'>
+            <div className="homeTitleContainer">
+                <h1 className="userTitle">
+                    Home
+                </h1>
+            </div>
             <FeaturedInfo />
             <Charts />
             <div className="homeWidgets">

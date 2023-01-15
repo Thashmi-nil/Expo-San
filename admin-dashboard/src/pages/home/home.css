@@ -1,8 +1,15 @@
 .home {
     flex: 4;
+    margin-top: 10px;
 }
 
 .homeWidgets {
     display: flex;
     margin: 20px;
+}
+
+.homeTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
 }
