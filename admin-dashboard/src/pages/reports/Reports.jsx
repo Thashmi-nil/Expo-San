@@ -3,6 +3,6 @@ import './reports.css'
 
 export default function Reports() {
     return (
-        <div className='reports'>Reports</div>
+        <div className='reports'> <h1 >Reports</h1></div>
     )
 }

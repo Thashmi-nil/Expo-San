@@ -3,6 +3,6 @@ import './feedback.css'
 
 export default function Feedback() {
     return (
-        <div className='feedback'>Feedback</div>
+        <div className='feedback'><h1 >Feedback</h1></div>
     )
 }

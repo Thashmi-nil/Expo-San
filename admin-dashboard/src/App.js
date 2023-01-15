@@ -39,6 +39,7 @@ import Feedback from "./pages/feedback/Feedback";
 import Messages from "./pages/messages/Messages";
 import Manage from "./pages/manage/Manage";
 import SystemLog from "./pages/systemLog/SystemLog";
+import Users from "./pages/users/Users"
 
 function App() {
   return (
@@ -57,7 +58,7 @@ function App() {
             <Sales />
           </Route>
           <Route path="/users">
-            <UserList />
+            <Users />
           </Route>
           <Route path="/user/:userId">
             <User />

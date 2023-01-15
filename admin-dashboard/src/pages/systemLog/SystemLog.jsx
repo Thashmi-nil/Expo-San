@@ -3,6 +3,6 @@ import './systemLog.css'
 
 export default function SystemLog() {
     return (
-        <div className='systemLog'>SystemLog</div>
+        <div className='systemLog'><h1 >SystemLog</h1></div>
     )
 }

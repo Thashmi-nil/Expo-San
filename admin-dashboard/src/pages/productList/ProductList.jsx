@@ -4,7 +4,7 @@ import './productList.css'
 export default function ProductList() {
     return (
         <div className='productList'>
-            ProductList
+            <h1 >Products</h1>
         </div>
     )
 }

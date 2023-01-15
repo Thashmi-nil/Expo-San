@@ -3,6 +3,6 @@ import './transactions.css'
 
 export default function Transaction() {
     return (
-        <div className='transactions'>Transaction</div>
+        <div className='transactions'><h1 >Transaction</h1></div>
     )
 }

@@ -3,6 +3,6 @@ import './mails.css'
 
 export default function Mails() {
     return (
-        <div className='mails'>Mails</div>
+        <div className='mails'><h1 >Mails</h1></div>
     )
 }
